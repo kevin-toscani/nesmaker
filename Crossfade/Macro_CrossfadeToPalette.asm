@@ -1,6 +1,6 @@
 
-MACRO CrossfadeToPalette _palette
-    LDA _palette
+MACRO CrossfadeToPalette arg0
+    LDA arg0
     STA paletteDestination
     LDA #CROSSFADE_TIMER_DEFAULT
     STA crossFadeTimer

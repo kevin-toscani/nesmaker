@@ -34,9 +34,18 @@ To crossfade the background to the desired palette, insert the following code to
     STA crossFadeTimer
 ```
 
-The provided macro does this as well
+The provided macro does this as well. Call as follows:
+```nasm
+    CrossfadeToPalette #1 ; change #1 to the desired palette ID
+```
+
+## Example
+
+See some example footage here:
+[![NESMaker crossfade test @ YouTube](https://img.youtube.com/vi/aUsmXhgVbo4/0.jpg)](https://www.youtube.com/watch?v=aUsmXhgVbo4)
 
 ## Customizations
+
 ### Fade speed
 You can change the fade speed by changing two values in the script.
 - Change`handleGameTimer.asm` line #5 to:
