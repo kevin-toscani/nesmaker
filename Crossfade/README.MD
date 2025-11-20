@@ -42,6 +42,7 @@ The provided macro does this as well. Call as follows:
 ## Example
 
 See some example footage here:
+
 [![NESMaker crossfade test @ YouTube](https://img.youtube.com/vi/aUsmXhgVbo4/0.jpg)](https://www.youtube.com/watch?v=aUsmXhgVbo4)
 
 ## Customizations
