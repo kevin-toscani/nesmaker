@@ -9,6 +9,7 @@ You can follow the guide provided on [the forum](https://nesmakers.com/index.php
 ## Example
 
 See some example footage here:
+
 [![NESMaker crossfade test @ YouTube](https://img.youtube.com/vi/FgvDwXrjx5c/0.jpg)](https://www.youtube.com/watch?v=FgvDwXrjx5c)
 
 ## Questions
