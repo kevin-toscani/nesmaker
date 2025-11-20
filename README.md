@@ -6,4 +6,7 @@ So far, the following features are available:
 ## Crossfade
 A script that lets you fade the background to any palette you want.
 
+## Zapper
+A script that adds zapper support to your game.
+
 More to come!
