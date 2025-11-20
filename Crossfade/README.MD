@@ -50,15 +50,15 @@ See some example footage here:
 ### Fade speed
 You can change the fade speed by changing two values in the script.
 - Change`handleGameTimer.asm` line #5 to:
--- `AND #CROSSFADE_SPEED_SUPERFAST` = superfast fade
--- `AND #CROSSFADE_SPEED_FAST` = fast fade
--- `AND #CROSSFADE_SPEED_DEFAULT` = medium fade (default)
--- `AND #CROSSFADE_SPEED_SLOW` = slow fade
-- Accordingly, change the value you store into `crossFadeTimer` (see `index_testCrossFade.asm` line #6 for an example, or change the provided macro if you're using that):
--- `LDA #CROSSFADE_TIMER_SUPERFAST` = superfast fade
--- `LDA #CROSSFADE_TIMER_FAST` = fast fade
--- `LDA #CROSSFADE_TIMER_DEFAULT` = medium fade (default)
--- `LDA #CROSSFADE_TIMER_SLOW` = slow fade
+  - `AND #CROSSFADE_SPEED_SUPERFAST` = superfast fade
+  - `AND #CROSSFADE_SPEED_FAST` = fast fade
+  - `AND #CROSSFADE_SPEED_DEFAULT` = medium fade (default)
+  - `AND #CROSSFADE_SPEED_SLOW` = slow fade
+- Accordingly, change the value you store into `crossFadeTimer` (see `input_testCrossFade.asm` line #6 for an example, or change the provided macro if you're using that):
+  - `LDA #CROSSFADE_TIMER_SUPERFAST` = superfast fade
+  - `LDA #CROSSFADE_TIMER_FAST` = fast fade
+  - `LDA #CROSSFADE_TIMER_DEFAULT` = medium fade (default)
+  - `LDA #CROSSFADE_TIMER_SLOW` = slow fade
 
 ## Questions
 If anything is unclear, drop me a line at kevin81@nerdboard.nl or on one of my [socials](https://kevinvanderburg.nl).
