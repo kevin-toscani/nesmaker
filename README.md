@@ -1,5 +1,5 @@
-# NESMaker 4.5.9 concepts
-This repository is a collection of add-on scripts for NESMaker 4.5.9. It's a continuous work in progress, so keep checking in for new developments.
+# NESMaker 4.5.x concepts
+This repository is a collection of add-on scripts for NESMaker 4.5.x. It's a continuous work in progress, so keep checking in for new developments.
 
 So far, the following features are available:
 
