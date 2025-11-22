@@ -5,7 +5,7 @@ Crossfade is a NESMaker 4.5.x script that allows you to fade the background to a
 
 ## Implementation
 
-1. Pull this repository into the `GameEngineData\Routines` folder of your NESMaker location. Alternatively, you can also download the ZIP file and only copy the `Crossfade` folder into place.
+1. Pull this repository into a location of choice, and then copy the `Crossfade` folder into the the `GameEngineData\Routines` folder of your NESMaker location.
 2. Add two variables to Overflow Ram (or ZP Ram if Overflow Ram is full) in your project settings: `crossfadeTimer` and `paletteDestination`.
 3. Add the following line to the "Bank16" script your game is using:
 ```nasm
