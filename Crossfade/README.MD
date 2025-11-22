@@ -1,7 +1,7 @@
 
 # Crossfade
 
-Crossfade is a NESMaker 4.5.x script that allows you to fade the background to any[^1] palette you wish.
+Crossfade is a NESMaker 4.5.x script that allows you to fade the background to any palette you wish.
 
 ## Implementation
 
@@ -63,4 +63,4 @@ You can change the fade speed by changing two values in the script.
 ## Questions
 If anything is unclear, drop me a line at kevin81@nerdboard.nl or on one of my [socials](https://kevinvanderburg.nl).
 
-[^1]: Caveat: this script only fades to untriggered day-time background palettes.
+[^1]: Caveat: this script only fades background palettes, not sprites.
