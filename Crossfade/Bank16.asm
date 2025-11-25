@@ -39,11 +39,15 @@ doCrossFadeSprites16:
             STA tempB
 
             ;; Update sprite color
+            TXA
+            PHA
             TYA
             PHA
             JSR doFadeColorArbitrarily
             PLA
             TAY
+            PLA
+            TAX
 
             ;; Next color
             INX
