@@ -4,9 +4,11 @@ This repository is a collection of add-on scripts for NESMaker 4.5.x. It's a con
 So far, the following features are available:
 
 ## Crossfade
-A script that lets you fade the background to any palette you want.
+A script that lets you fade the background and sprite[^1] colors to any palette you want.
 
 ## Zapper
 A script that adds zapper support to your game.
 
 More to come!
+
+[^1]: Needs to be tested/verified
