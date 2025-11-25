@@ -3,8 +3,10 @@
 
 Crossfade is a NESMaker 4.5.x script that allows you to fade the background and/or sprites to any (sub)palette you wish.
 
-## Implementation
+## To do
+- Test and (potentially) fix sprite fading routine
 
+## Implementation
 1. Pull this repository into a location of choice, and then copy the `Crossfade` folder into the the `GameEngineData\Routines` folder of your NESMaker location.
 2. Add two variables to Overflow Ram (or ZP Ram if Overflow Ram is full) in your project settings: `crossfadeTimer` and `paletteDestination`.
 3. Add the following line to the "Bank16" script your game is using:
@@ -22,7 +24,6 @@ If you're not using an "handle game timer" script yet (i.e. it has `blank.asm` a
 If you want to quickly test the crossfade script, you can add `input_testCrossfade.asm` to your input scripts, and assign it to an input of choice (for example, Press Select on Main Game). This test script cycles the background palette through the first four background palettes of your project.
 
 ## Usage
-
 To crossfade the background to the desired palette, insert the following code to where you want the fade to be initialized.
 ```nasm
     ;; Preload the ID of the palette you want to fade to.
