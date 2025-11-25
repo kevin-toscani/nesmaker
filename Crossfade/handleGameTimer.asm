@@ -11,6 +11,7 @@
     ;; Fade the frame a step towards the new palette
     SwitchBank #$16
     JSR doCrossFade16
+    JSR doCrossFadeSprites16
     ReturnBank
 
     ;; We're done for now

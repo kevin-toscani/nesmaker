@@ -13,6 +13,59 @@ CROSSFADE_TIMER_DEFAULT   = %01000001
 CROSSFADE_TIMER_SLOW      = %10000001
 
 
+doCrossFadeSprites16:
+    LDX #$00
+    -loadSubpalettesLoop:
+        ;; Load desired subpalette
+        LDY spriteSubPal1,x
+        LDA ObjectPaletteDataLo,y
+        STA temp16
+        LDA ObjectPaletteDataHi,y
+        STA temp16+1
+
+        ;; Multiply x-register by 4 to get the subpalette offset
+        TXA
+        PHA
+        ASL
+        ASL
+        TAX
+
+        ;; Loop through the colors
+        LDY #$00
+        -fadeColorLoop:
+            LDA sprPal,x
+            STA tempA
+            LDA (temp16),y
+            STA tempB
+
+            ;; Update sprite color
+            TYA
+            PHA
+            JSR doFadeColorArbitrarily
+            PLA
+            TAY
+
+            ;; Next color
+            INX
+            INY
+            CPY #4
+        BNE -fadeColorLoop
+
+        ;; Next subpalette
+        PLA
+        TAX
+        INX
+        CPX #$04
+    BNE -loadSubpalettesLoop
+
+    ;; Tell NMI to update sprite colors in the PPU
+    LDA updateScreenData
+    ORA #%00000010
+    STA updateScreenData
+
+    RTS
+
+
 ;;
 ;; Subroutine: doCrossFade16
 ;; Loads the desired palette and "moves" all current palette colors
@@ -22,6 +75,7 @@ CROSSFADE_TIMER_SLOW      = %10000001
 ;; Clobbers X, Y, tempA, tempB, temp16
 ;;
 
+
 doCrossFade16:
     ;; Load the desired destination palette address
     LDY paletteDestination
@@ -30,7 +84,7 @@ doCrossFade16:
     LDA GameBckPalHi,y
     STA temp16+1
 
-    ;; Loop through the current colors
+    ;; Loop through the colors
     LDY #$0F
     -fadeColorLoop:
     
