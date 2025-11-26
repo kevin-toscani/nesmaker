@@ -17,7 +17,7 @@ Crossfade is a NESMaker 4.5.x script that allows you to fade the background and/
 If you're not using an "handle game timer" script yet (i.e. it has `blank.asm` assigned in the script settings), you can also assign the `Routines\Crossfade\handleGameTimer.asm` to the Handle Game Timer script in your script settings.
 
 ## Test
-If you want to quickly test the crossfade script, you can add `input_testCrossfade.asm` to your input scripts, and assign it to an input of choice (for example, Press Select on Main Game). This test script cycles the background palette through the first four background palettes of your project.
+If you want to quickly test the crossfade script, you can add `input_testCrossfade.asm` to your input scripts, and assign it to an input of choice (for example, Press Select on Main Game). This test script toggles the background palette between 0 and 1, and all sprite palettes between 0 and 3.
 
 ## Usage
 To crossfade the background to the desired palette, insert the following code to where you want the fade to be initialized.
