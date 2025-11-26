@@ -48,6 +48,9 @@ doCrossFadeSprites16:
             TAY
             PLA
             TAX
+            
+            LDA tempA
+            STA sprPal,x
 
             ;; Next color
             INX

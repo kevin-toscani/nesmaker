@@ -1,12 +1,12 @@
 
     ;; Cycle through the first four palettes
-    INC paletteDestination
     LDA paletteDestination
-    AND #%00000011
+    EOR #1
     STA paletteDestination
 
     ;; Load a new sprite subpalette (e.g. a grayscale one)
-    LDA #$04
+    LDA spriteSubPal1
+    EOR #3
     STA spriteSubPal1
     STA spriteSubPal2
     STA spriteSubPal3
