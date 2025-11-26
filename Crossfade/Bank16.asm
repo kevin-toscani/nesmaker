@@ -85,7 +85,7 @@ doCrossFadeSprites16:
 
 doCrossFade16:
     ;; Load the desired destination palette address
-    LDY paletteDestination
+    LDY newPal
     LDA GameBckPalLo,y
     STA temp16
     LDA GameBckPalHi,y

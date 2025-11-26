@@ -1,8 +1,8 @@
 
     ;; Cycle through the first four palettes
-    LDA paletteDestination
+    LDA newPal
     EOR #1
-    STA paletteDestination
+    STA newPal
 
     ;; Load a new sprite subpalette (e.g. a grayscale one)
     LDA spriteSubPal1
