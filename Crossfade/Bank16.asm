@@ -197,7 +197,7 @@ doFadeColorArbitrarily:
             BNE +
                 TXA
                 AND #$F0
-                ORA #$0D
+                ORA #$0C
                 TAX
             +
             STX tempA
